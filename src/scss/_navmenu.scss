@@ -1,0 +1,56 @@
+/**
+* Default CSS menu
+* @version 1.0.0
+* @author Thapelo Moeti
+*
+*   Default styling of a CSS drop menu.
+*/
+
+.nav-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu > li {
+    float: left;
+}
+
+.nav-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    background-color: #fff;
+    display: none;
+}
+
+.nav-menu .sub-menu .sub-menu,
+.nav-menu .children .children {
+    min-width: 100%;
+    left: 100%;
+    top: 0;
+}
+
+.nav-menu li:hover > .sub-menu,
+.nav-menu li > a:focus ~ .sub-menu,
+.nav-menu li:hover > .children,
+.nav-menu li > a:focus ~ .children {
+    display: block;
+}

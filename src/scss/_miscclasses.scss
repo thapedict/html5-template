@@ -1,0 +1,98 @@
+/**
+* Misc classes
+* @version 1.0.0
+* @author Thapelo Moeti
+*
+*   Those nice to have, but not really necessary classes.
+*/
+
+.inline {
+    display: inline-block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.invinsible {
+    visibility: hidden;
+}
+
+.smaller {
+    font-size: 90%;
+}
+
+.bigger {
+    font-size: 120%;
+}
+
+.radius-50, 
+.circle,
+.img-circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.border-top {
+    border-top: 1px solid;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+.border-1pxs {
+    border: 1px solid;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.success,
+.notice,
+.error,
+.warning {    
+    margin: 2px 0;
+    padding: $defaultPadding * 0.5;
+    border: 1px solid;
+    border-right-width: 3px;
+}
+
+.success {
+    color: #007902;
+    background-color: #B9FFAD;
+}
+
+.warning {
+    color: #FF3D00;
+    background-color: #FBCBBB;
+}
+
+.notice {
+    color: #0044D1;
+    background-color: #C1EAFF;
+}
+
+.error {
+    color: #F00;
+    background-color: #F7D8D8;
+}
+
+i.fas,
+i.fab {
+    width: $fontSize * 1.2;
+    text-align: center;
+}

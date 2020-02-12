@@ -166,6 +166,7 @@ hr {
     border-right: 0 !important;
     border-bottom: 0 !important;
     height: 0;
+    margin: ($defaultPadding * 1.5) $defaultPadding;
 }
 
 img {

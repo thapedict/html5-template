@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My HTML5 Boilerplate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- We love grids -->
+        <link rel="stylesheet" href="css/grid.css" />
+        <!-- And we love some common style accross browsers -->
+        <link rel="stylesheet" href="css/basic.css" />
+
+        <!-- Theme? Should we really? Maybe later -->
+        <!--<link rel="stylesheet" href="src/theme.css" />-->
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="./">Home</a></li>
+                <li><a href="basic.html">Basic Styling</a></li>
+                <li><a href="grid.html">Grid Systems</a></li>
+            </ul>
+        </nav>
+        <style>
+            [class*="ts"] li:nth-child(1) {
+                background-color: burlywood;
+            }
+            [class*="ts"] li:nth-child(2) {
+                background-color: coral;
+            }
+            [class*="ts"] li:nth-child(3) {
+                background-color: darkolivegreen;
+            }
+            [class*="ts"] li:nth-child(4) {
+                background-color: darkgray;
+            }
+            [class*="ts"].next li:nth-child(1) {
+                background-color: red;
+            }
+            [class*="ts"].next li:nth-child(2) {
+                background-color: rgb(102, 0, 94);
+            }
+            [class*="ts"].next li:nth-child(3) {
+                background-color: rgb(0, 87, 65);
+            }
+            [class*="ts"].next li:nth-child(3) {
+                background-color: blue;
+            }
+        </style>
+        <div class="container">
+            <h1>Grid System</h1>
+            <p>Firstly, lets only split on large screens: <code>ts-l-3</code></p>
+            <ul class="ts-l-3">
+                <li>ts-3 *:first-child</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ul>
+            <hr>
+            <p>Then we split only on small screens: <code>ts-s-3</code></p>
+            <ul class="ts-s-3 next">
+                <li>ts-s-3</li>
+                <li>Two</li>
+                <li>3</li>
+            </ul>
+            <p>Split 4 on desktop & large screens, and 2 on small & medium screens: <code>ts-dl-4 ts-sm-2</code></p>
+            <ul class="ts-dl-4 ts-sm-2">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+        </div>
+    </body>
+</html>

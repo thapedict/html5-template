@@ -1,6 +1,10 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const cleanCSS = require('gulp-clean-css');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const del = require('del');
 
 const paths = {
     app: './app/',
@@ -25,6 +29,30 @@ gulp.task('sass',function(){
         stream: true
     }))
 });
+
+gulp.task('concatcss',function(){
+    return gulp.src([paths.css + 'grid.css', paths.css + 'basic.css'])
+    .pipe(concat('grid.basic.css'))
+    .pipe(gulp.dest(paths.css))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
+});
+
+gulp.task('delcss',function(){
+    return del(paths.css + '*.min.css');
+});
+
+gulp.task('minicss', gulp.series('delcss', function(){
+    return gulp.src(globs.css)
+    .pipe(cleanCSS())
+    .pipe(rename({
+            suffix: '.min'
+        }))
+    .pipe(gulp.dest(paths.css))
+}));
+
+gulp.task('css', gulp.series(['sass','concatcss','minicss']));
 
 function reload(done){
     browserSync.reload();

@@ -59,6 +59,10 @@ $gridPrefix: 'ts';
     flex-flow: row wrap;
     margin: 0;
 
+    & > * {
+      padding: $padding;
+    }
+
     & > li {
       display: block;
     }
@@ -118,7 +122,7 @@ $gridPrefix: 'ts';
 }
 
 // Nice to have, but not really necessary
-/// Misc Classes for everyday use
+/// Misc Classes for everyday use 
 /// @param {selector} prefix selector
 @mixin miscClasses( $pre ) {
   #{$pre}-hidden {
@@ -167,6 +171,8 @@ $gridPrefix: 'ts';
   @extend %container;
 }
 
+// All screens
+@include columns();
 // Large screens
 @include responsiveQueries("1200px", null, "l");
 // Desktop and Large screens
@@ -182,5 +188,3 @@ $gridPrefix: 'ts';
 // Small Screens
 @include responsiveQueries(null, "767.9px", "s");
 
-// And finally lets just have classes to handle all screens
-@include columns();

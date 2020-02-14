@@ -25,9 +25,6 @@ gulp.task('sass',function(){
     return gulp.src(paths.devCSS + '*.scss')
     .pipe(sass())
     .pipe(gulp.dest(paths.css))
-    .pipe(browserSync.reload({
-        stream: true
-    }))
 });
 
 gulp.task('concatcss',function(){
@@ -70,7 +67,7 @@ function serve( done ){
 
 function watcher() {
     gulp.watch(globs.html).on('change', reload);
-    gulp.watch(globs.scss,gulp.series('sass'));
+    gulp.watch(globs.scss,gulp.series('css', ()=>{ reload() }));
 }
 
 gulp.task('watch',

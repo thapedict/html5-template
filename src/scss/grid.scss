@@ -1,9 +1,7 @@
 /*!
-* Grid
+* TS Grid System
 * @version 1.0.0
 * @author Thapelo Moeti
-*
-*   Because we all need a grid system, I made one.
 */
 
 $padding: 16px;
@@ -60,6 +58,10 @@ $gridPrefix: 'ts';
     display: flex;
     flex-flow: row nowrap;
     margin: 0;
+
+    & > li {
+      display: block;
+    }
   }
 
   // Some splits I could have DRYed up, I know.
@@ -165,20 +167,20 @@ $gridPrefix: 'ts';
   @extend %container;
 }
 
-/* Large screens */
+// Large screens
 @include responsiveQueries("1200px", null, "l");
-/* Desktop and Large screens */
+// Desktop and Large screens
 @include responsiveQueries("960px", null, "dl");
-/* Desktop */
+// Desktop
 @include responsiveQueries("960px", "1199.9px", "d");
 /* Not Small screens */
 @include responsiveQueries("768px", null, "ns");
-/* Small and Medium screens */
+// Small and Medium screens
 @include responsiveQueries(null, "959.9px", "sm");
-/* Medium screens */
+// Medium screens
 @include responsiveQueries("768px", "959.9px", "m");
-/* Small Screens */
+// Small Screens
 @include responsiveQueries(null, "767.9px", "s");
 
-/* And finally lets just have classes to handle all screens */
+// And finally lets just have classes to handle all screens
 @include columns();

@@ -73,3 +73,7 @@ function watcher() {
 gulp.task('watch',
         gulp.series( serve, watcher )
 );
+
+gulp.task('default',
+    gulp.series(['css','watch'])
+);

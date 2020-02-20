@@ -15,6 +15,10 @@
     float: left;
 }
 
+.nav-menu > li:first-child {
+    padding-left: 0;
+}
+
 .nav-menu:after {
     content: "";
     display: table;

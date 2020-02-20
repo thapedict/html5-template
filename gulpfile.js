@@ -53,7 +53,7 @@ gulp.task('css', gulp.series(['sass','concatcss','minicss']));
 
 function reload(done){
     browserSync.reload();
-    //done();
+    done();
 }
 
 function serve( done ){
@@ -66,8 +66,8 @@ function serve( done ){
 };
 
 function watcher() {
-    gulp.watch(globs.html).on('change', reload);
-    gulp.watch(globs.scss,gulp.series('css', ()=>{ reload() }));
+    gulp.watch(globs.html, (done)=>{reload(done)} );
+    gulp.watch(globs.scss, gulp.series('css', (cb)=>{ reload(cb)}) );
 }
 
 gulp.task('watch',

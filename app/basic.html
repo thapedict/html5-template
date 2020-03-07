@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My HTML5 Boilerplate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- We love grids -->
+        <link rel="stylesheet" href="css/grid.css" />
+        <!-- And we love some common style accross browsers -->
+        <link rel="stylesheet" href="css/basic.css" />
+
+        <!-- Theme? Should we really? Maybe later -->
+        <!--<link rel="stylesheet" href="src/theme.css" />-->
+    </head>
+    <body>
+    <section id="menu">
+        <div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="basic.html">Basic Styling</a></li>
+                    <li><a href="grid.html">Grid Systems</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+        
+    <section id="headings">
+        <div class="container">		
+                <h1 id="section-title">Typography</h1>
+                <div id="content">
+                    <h1>h1. Heading</h1>
+                    <h2>h2. Heading</h2>
+                    <h3>h3. Heading</h3>
+                    <h4>h4. Heading</h4>
+                    <h5>h5. Heading</h5>
+                    <h6>h6. Heading</h6>
+                    <p>Normal paragraph. psum dolor sit ametLorem ipsumpsum dolor sit ametLorem ipsum dolor sit ametLorem <br/>ipsum dolor sitpsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit dolor sit ametLorem ipsum dolor sitpsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit </p>
+                    <p> sit ametLorem ipsum dolor sitpsum dolor sNormal paragraph. psum dolor sit ametLorem ipsumpsum dolor sit ametLorem ipsum dolorit ametLorem ipsum dolor sit ametLorem ipsum dolor sit dolor sit ametLorem ipsum dolor sitpsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit </p>
+                </div>
+        </div>
+    </section>
+    
+    <section id="blockquotes">
+    <div class="container">		
+            <h1 id="section-title">Blockquotes</h1>
+            <div id="content">
+                <blockquote>
+                    Text with no p wrapper
+                </blockquote>
+                <blockquote>
+                    <p>Text with p wrapper</p>
+                </blockquote>
+                <p>Blockquote with a <code>footer</code> tag</p>
+                <blockquote>
+                    <p>Blockquote with footer</p>
+                    <footer>The Footer</footer>
+                </blockquote>
+            </div>
+    </div>
+    </section>
+    
+    <section id="lists">
+    <div class="container">		
+            <h1 id="section-title">Lists</h1>
+            <div id="content">
+                <h3>Unordered</h3>
+                <div class="indent-10 pad-10">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet
+                            <ul>
+                                <li>Submenu</li>
+                                <li>Submenuolor sit am
+                                    <ul>
+                                        <li>Submenu of sub</li>
+                                        <li>Submenuolor sit am</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                    </ul>
+                                </li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                </div>
+                <h3>Ordered</h3>
+                <div class="indent-10 pad-10">
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet
+                            <ol>
+                                <li>Submenu</li>
+                                <li>Submenuolor sit am
+                                    <ol>
+                                        <li>Submenu of sub</li>
+                                        <li>Submenuolor sit am</li>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                    </ol>
+                                </li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </ol>
+                        </li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </div>
+                <h3>Definition Lists (Terms and Definitions)</h3>
+                <blockquote>
+                &lt;dl&gt;<br/>
+                &lt;dt&gt;...&lt;/dt&gt;<br/>
+                &lt;dd&gt;...&lt;/dd&gt;<br/>
+                &lt;/dl&gt;
+                </blockquote>
+                
+                    <dl>
+                        <dt>Term</dt>
+                        <dd>Definition of term</dd>
+                        <dt>Term 2</dt>
+                        <dd>Definition of term two</dd>
+                    </dl>
+                    
+                <h3>Horizontal Definition Lists</h3>
+                <blockquote>
+                &lt;dl class="<code>horizontal</code>"&gt;<br/>
+                &lt;dt&gt;...&lt;/dt&gt;<br/>
+                &lt;dd&gt;...&lt;/dd&gt;<br/>
+                &lt;/dl&gt;
+                </blockquote>
+                
+                    <dl class="horizontal">
+                        <dt>Term</dt>
+                        <dd>Definition of term</br/>Term Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</dd>
+                        <dt>Term 2</dt>
+                        <dd>Definition of term two</dd>
+                    </dl>
+            </div>
+    </div>
+    </section>
+    
+    <section id="tables">
+    <div class="container">		
+            <h1 id="section-title">Tables</h1>
+            <div id="content">
+                <p>Tables are by default 100% width with borders</p>
+                <table class="">
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                </table>
+                <h3>Table Styling</h3>
+                <p>To remove borders, add the class <code>no-borders</code> to the table</p>
+                <table class="no-borders">
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                </table>
+                <br/>
+                <p>To add borders (but no side borders), add the class <code>no-side-borders</code> to the table</p>
+                <table class="no-side-borders">
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                </table>
+                <br/>
+                <p>To add background shading, add the class <code>shaded</code> to the table</p>
+                <table class="shaded">
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                </table>
+                <br/>
+                <p><code>shaded</code> with <code>no-borders</code></p>
+                <table class="shaded no-borders">
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                    <tr>
+                        <td>Thapelo</td><td>Moeti</td><td>thapedict</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    </section>
+    
+    <section id="other-elements">
+    <div class="container">		
+            <h1 id="section-title">Other Elements</h1>
+            <div id="content">
+                <h4>&lt;code&gt;</h4>
+                <div>When &lt;section&gt; is wrapped with &lt;code&gt; tag, &lt;section&gt; should be styled like this <code>&lt;section&gt;</code>.</div>
+                <h4>&lt;kbd&gt;</h4>
+                <div>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+                To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></div>
+            </div>
+    </div>
+    </section>
+    
+    <section id="form-inputs">
+    <div class="container">		
+            <h1 id="section-title">Form Inputs</h1>
+            <div id="content">
+                <p>Input fields (except of course type=radio and type=checkbox), textareas, and select fields are <b>100%</b> width by default</p>
+                <h4>Input[type=text]</h4>
+                <input type="text" placeholder="Placeholder" />
+                <h4>Input[type=email]</h4>
+                <input type="email" placeholder="Placeholder" />
+                <h4>Input[type=number]</h4>
+                <input type="number" placeholder="Placeholder" />
+                <h4>Textarea</h4>
+                <textarea placeholder="Placeholder" ></textarea>
+                <h4>Select</h4>
+                <select>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                </select>
+                <h4>Radio</h4>
+                <label>One <input type="radio" name="rad" value="one" /></label>
+                <label>Two <input type="radio" name="rad" value="two" /></label>
+                <label>Three <input type="radio" name="rad" value="three" /></label>
+                <h4>Checkbox</h4>
+                <label>One <input type="checkbox" name="rad" value="one" /></label>
+                <label>Two <input type="checkbox" name="rad" value="two" /></label>
+                <label>Three <input type="checkbox" name="rad" value="three" /></label>
+            </div>
+    </div>
+    </section>
+    
+    <section id="misc-classes">
+    <div class="container">		
+            <h1 id="section-title">Misc Classes</h1>
+            <div id="content">
+                <p>The following classes modify the <code>color</code>, <code>background-color</code>, <code>border</code>, <code>margin</code> and <code>padding</code> CSS attributes</p>
+                <p><code>.warning</code><div class="warning">This is a warning</div></p>
+                <p><code>.notice</code><div class="notice">This is a notice</div></p>
+                <p><code>.error</code><div class="error">This is an error</div></p>
+                <p><code>.success</code><div class="success">This is a success</div></p>
+            </div>
+    </div>
+    </section>
+
+    </body>
+</html>

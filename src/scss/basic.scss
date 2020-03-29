@@ -187,8 +187,8 @@ select {
     width: 100%;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
     width: auto;
     margin-right: $defaultPadding;
     margin-left: $inputPadding;
@@ -222,12 +222,12 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
-input[type="search"] {
+input[type=search] {
     -webkit-appearance: textfield; 
 }
 
@@ -237,9 +237,9 @@ html input[disabled] {
 }
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer;
 }

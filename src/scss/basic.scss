@@ -45,6 +45,8 @@ body {
     background-color: $white;
 }
 
+@import '_h1';
+
 a {
     color: inherit;
 }
@@ -130,37 +132,6 @@ dt {
     font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
-    margin: 0.6em 0;
-}
-
-h1 {
-    font-size: $fontSize * 2.2;
-}
-
-h2 {
-    font-size: $fontSize * 1.9;
-}
-
-h3 {
-    font-size: $fontSize * 1.5;
-}
-
-h4 {
-    font-size: $fontSize * 1.3;
-}
-
-h5,
-h6 {
-    font-size: $fontSize;
-}
-
 hr {
     border-top: 1px solid #ADADAD;
     border-left: 0 !important;
@@ -194,6 +165,11 @@ ul {
     margin: $defaultPadding ($defaultPadding * 1.3);
 }
 
+ol:first-child,
+ul:first-child {
+    margin-top: 0;
+}
+
 ol ol,
 ul ul,
 ul ol,
@@ -213,10 +189,6 @@ nav ul,
 nav ol {
     list-style: none;
     list-style-image: none;
-}
-
-p {
-    margin: $defaultPadding 0;
 }
 
 pre {
@@ -292,19 +264,6 @@ sub {
 
 svg:not(:root) {
     overflow: hidden;
-}
-
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child,
-h5:first-child, 
-h6:first-child,
-ol:first-child,
-ul:first-child,
-table:first-child,
-p:first-child {
-    margin-top: 0;
 }
 
 blockquote > *:last-child {
@@ -424,6 +383,10 @@ table.no-side-borders th {
 
 table.v-align-top td {
     vertical-align: top;
+}
+
+table:first-child {
+    margin-top: 0;
 }
 
 small,

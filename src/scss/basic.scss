@@ -540,29 +540,26 @@ del,
 
 button,
 .button,
-.big-button,
 input[type=submit],
 input[type=reset] {    
     display: inline-block;
     border: none;
     cursor: pointer;
     color: #fff;
-    background-color: #8F8F8F;
+    background-color: #4c4c4c;
     transition: transform 1s;
 }
 
 button:hover,
 .button:hover,
-.big-button:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
 button:focus,
 .button:focus,
-.big-button:focus,
 input[type=submit]:focus,
 input[type=reset]:focus {
     transform: scale( 1.05, 1.05 );
-    transition: transform 0.4s;
+    transition: transform 0.3s;
 }
 
 button,
@@ -570,7 +567,6 @@ button,
 input[type=submit],
 input[type=reset] {    
     padding: ($defaultPadding * 0.5) ($defaultPadding * 0.8);
-    border-radius: 4px;
 }
 
 nav {

@@ -27,7 +27,7 @@ gulp.task('sass',function(){
     .pipe(gulp.dest(paths.css))
 });
 
-gulp.task('concatcss',function(){
+gulp.task('concat-css',function(){
     return gulp.src([paths.css + 'grid.css', paths.css + 'basic.css'])
     .pipe(concat('grid-basic.css'))
     .pipe(gulp.dest(paths.css))
@@ -36,15 +36,15 @@ gulp.task('concatcss',function(){
     }))
 });
 
-gulp.task('delcss',function(){
+gulp.task('del-css',function(){
     return del(paths.css + '*.css');
 });
 
-gulp.task('delminicss',function(){
+gulp.task('del-mini-css',function(){
     return del(paths.css + '*.min.css');
 });
 
-gulp.task('minicss', gulp.series('delminicss', function(){
+gulp.task('mini-css', gulp.series('del-mini-css', function(){
     return gulp.src(globs.css)
     .pipe(cleanCSS())
     .pipe(rename({
@@ -53,7 +53,7 @@ gulp.task('minicss', gulp.series('delminicss', function(){
     .pipe(gulp.dest(paths.css))
 }));
 
-gulp.task('css', gulp.series(['sass','concatcss','minicss']));
+gulp.task('css', gulp.series(['sass','concat-css','mini-css']));
 
 function reload(done){
     browserSync.reload();

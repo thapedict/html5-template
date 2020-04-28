@@ -12,17 +12,11 @@
 }
 
 .nav-menu > li {
-    float: left;
+    display: inline-block;
 }
 
 .nav-menu > li:first-child {
     padding-left: 0;
-}
-
-.nav-menu:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .nav-menu li {

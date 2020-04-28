@@ -36,7 +36,8 @@ body {
     position: relative;
     font-family: $fontFamily;
     font-size: $fontSize;
-    line-height: 1.15;
+    line-height: 1.3;
+    letter-spacing: .02em;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }

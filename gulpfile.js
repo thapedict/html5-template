@@ -29,7 +29,7 @@ gulp.task('sass',function(){
 
 gulp.task('concatcss',function(){
     return gulp.src([paths.css + 'grid.css', paths.css + 'basic.css'])
-    .pipe(concat('grid.basic.css'))
+    .pipe(concat('grid-basic.css'))
     .pipe(gulp.dest(paths.css))
     .pipe(browserSync.reload({
         stream: true

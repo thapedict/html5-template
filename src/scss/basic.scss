@@ -87,7 +87,7 @@ audio:not([controls]) {
 }
 
 blockquote {
-    margin: ($defaultPadding * 1.5) $defaultPadding;
+    margin: ($defaultPadding * 1.5) ($defaultPadding * 0.5);
     padding: $defaultPadding;
     border-left: 5px solid $primaryColor;
     background-color: $lightShadedBackColor;

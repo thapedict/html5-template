@@ -187,4 +187,6 @@ $gridPrefix: 'ts';
 @include responsiveQueries("768px", "959.9px", "m");
 // Small Screens
 @include responsiveQueries(null, "767.9px", "s");
+// Extra Small Screens
+@include responsiveQueries(null, "424.9px", "xs");
 

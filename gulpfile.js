@@ -37,10 +37,14 @@ gulp.task('concatcss',function(){
 });
 
 gulp.task('delcss',function(){
+    return del(paths.css + '*.css');
+});
+
+gulp.task('delminicss',function(){
     return del(paths.css + '*.min.css');
 });
 
-gulp.task('minicss', gulp.series('delcss', function(){
+gulp.task('minicss', gulp.series('delminicss', function(){
     return gulp.src(globs.css)
     .pipe(cleanCSS())
     .pipe(rename({

@@ -4,7 +4,8 @@
   "description": "A very nice HTML5 Boilerplate",
   "main": "index.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "css": "gulp css"
   },
   "keywords": [],
   "author": "",

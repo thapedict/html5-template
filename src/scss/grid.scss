@@ -166,8 +166,7 @@ $gridPrefix: 'ts';
   }
 }
 
-.container,
-.container-full {
+.container {
   @extend %container;
 }
 

@@ -6,6 +6,14 @@
 *   Those nice to have, but not really necessary classes.
 */
 
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 .inline {
     display: inline-block;
 }

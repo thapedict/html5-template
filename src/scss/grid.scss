@@ -126,7 +126,7 @@ $gridPrefix: 'ts';
 /// @param {selector} prefix selector
 @mixin miscClasses( $pre ) {
   #{$pre}-hidden {
-    display: hidden;
+    display: none;
   }
 
   #{$pre}-shown {

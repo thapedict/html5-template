@@ -132,6 +132,10 @@ $gridPrefix: 'ts';
   #{$pre}-block {
     display: block;
   }
+
+  #{$pre}-inline {
+    display: inline-block;
+  }
   
   #{$pre}-flex {
     display: flex;

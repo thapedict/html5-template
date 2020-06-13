@@ -57,7 +57,7 @@ input[type=search] {
 }
 
 button[disabled],
-html input[disabled] {
+input[disabled] {
     cursor: default;
 }
 
@@ -111,7 +111,7 @@ button:focus,
 input[type=submit]:focus,
 input[type=reset]:focus {
     transform: scale( 1.05, 1.05 );
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 button,

@@ -192,6 +192,11 @@ nav ol {
     list-style-image: none;
 }
 
+mark {
+    background: #ff0;
+    color: #000;
+}
+
 pre {
     padding: $defaultPadding;
     background-color: #EDEDED;

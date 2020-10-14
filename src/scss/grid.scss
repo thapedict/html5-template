@@ -69,6 +69,10 @@ $gridPrefix: 'ts';
     }
   }
 
+  #{$selector}-no-gutter > * {
+    padding: 0;
+  }
+
   // Some splits I could have DRYed up, I know.
   // But for the sake of readability let's not.
   #{$selector}-1 > * {
